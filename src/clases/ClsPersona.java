@@ -58,9 +58,4 @@ private Map<String,String> horario;
             System.out.println("El " + dia + " tiene " + asignatura);
         }
     }
-
-
-    
-    
-    
 }
