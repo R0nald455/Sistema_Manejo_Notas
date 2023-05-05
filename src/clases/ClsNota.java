@@ -8,13 +8,14 @@ package clases;
 public class ClsNota {
    
    private double nota;
-   private ClsEstudiante estudiante;
-   private ClsAsignatura asignatura;
+   private String estudiante;
+   private String asignatura;
 
     public ClsNota( ClsEstudiante estudiante, ClsAsignatura asignatura,double nota) {
         this.nota = nota;
-        this.estudiante = estudiante;
-        this.asignatura = asignatura;
+        this.estudiante = estudiante.getNombre();
+        this.asignatura = asignatura.getNombre();
+        estudiante.AgregarNota(this.asignatura, nota);
     }
 
     public double getNota() {
@@ -25,22 +26,6 @@ public class ClsNota {
         this.nota = nota;
     }
 
-    public String getEstudiante() {
-        return estudiante.getNombre();
-    }
-
-    public void setEstudiante(ClsEstudiante estudiante) {
-        this.estudiante = estudiante;
-    }
-
-    public String getAsignatura() {
-        return asignatura.getNombre();
-    }
-    
-    public void setAsignatura(ClsAsignatura asignatura) {
-        this.asignatura = asignatura;
-    }
-   
    
     
     
