@@ -28,6 +28,8 @@ public class Notas_Colegio {
         //se instancia un profesor 
         ClsProfesor prof1= new ClsProfesor(13212321,"Kevin","Galeano",Asig1);
         
+        
+        
         //se pone nota a el estudiante  por  asignatura 
         ClsNota nota1=new ClsNota (est2,Asig4,1.8);
         ClsNota nota2=new ClsNota (est2,Asig5,2.5);
@@ -64,6 +66,7 @@ public class Notas_Colegio {
         prof1.mostrarHorario();
         
         
+      
     }
 
 }
